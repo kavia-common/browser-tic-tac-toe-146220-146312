@@ -1,38 +1,34 @@
-# sv
+# Tic Tac Toe — Svelte (Ocean Professional)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A minimalist, responsive, two‑player Tic Tac Toe built with SvelteKit. Features a modern “Ocean Professional” theme with blue and amber accents, smooth transitions, and clear on‑screen indicators for turns, wins, and draws.
 
-## Creating a project
+## Quick start
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies and run the dev server:
 
 ```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+Build for production:
 
 ```bash
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Features
+- Two‑player local play (X and O alternate on the same device)
+- Winner and draw detection with visual highlights
+- Reset button to start a new game
+- Responsive, centered layout (mobile and desktop)
+- Modern theme with rounded corners, subtle shadows, and gradient accents
+- Smooth CSS transitions for interactions and states
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Project structure
+- src/app.css — Global Ocean Professional theme variables and utilities
+- src/routes/+layout.svelte — Global layout shell
+- src/routes/+page.svelte — Main Tic Tac Toe game UI and logic
+
+No environment variables are required.

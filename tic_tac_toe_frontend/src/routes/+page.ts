@@ -1,3 +1,5 @@
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
+/**
+ * PUBLIC_INTERFACE
+ * This page is fully static; prerender to serve as static asset in production.
+ */
 export const prerender = true;
